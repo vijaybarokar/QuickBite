@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal">#D9366D</color>
+    <color name="sky">#2196F3</color>
+    <color name="red">#D91414</color>
+    <color name="redlight">#E94B4B</color>
+    <color name="lightgray">#9B9999</color>
+    <color name="orange">#EB900A</color>
+    <color name="blue">#3048CC</color>
+    <color name="green">#4CAF50</color>
+    <color name="page_bg">#D9D950</color>
+    <color name="secondary_color">#D94B261A</color>
+    <color name="main_text_color">#212121</color>
+    <color name="secondarycolor">#D94B261A</color>
+    <color name="card_background_color">#FAFAFA</color>
+    <color name="primaryColor">#FF5722</color>       <!-- Vibrant Orange -->
+    <color name="primaryDarkColor">#E64A19</color>   <!-- Darker Orange -->
+    <color name="accentColor">#FFC107</color>        <!-- Amber/Highlight -->
+    <color name="buttonPressedColor">#D84315</color>
+    <color name="dark_gray">#7E7E7F</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="gray">#757575</color> <!-- Pressed State -->
+
+</resources>

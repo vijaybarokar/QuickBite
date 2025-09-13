@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryWiseDishActivity"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svcategorywisesearchDish"
+        app:queryHint="Search by Category,Restaurant,Dish,Dish Category"
+        app:iconifiedByDefault="false"
+        android:layout_margin="16sp"
+        android:padding="8sp"
+        android:background="@drawable/etbgshape"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvCategorywiseDishListofDish"
+        android:layout_margin="16sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCategoryWiseDishNoDishAvailable"
+        android:text="No Dish Available"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aldrich"
+        android:visibility="gone"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 🔹 Special Offers Slider -->
+        <ViewFlipper
+            android:id="@+id/imageFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right" />
+
+        <!-- 🔹 Trending Now Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending Now"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/trendingLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:fillViewport="true">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="8dp">-->
+
+<!--        &lt;!&ndash; 🔹 Offers Slider &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Special Offers"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="8dp"/>-->
+
+<!--        <ViewFlipper-->
+<!--            android:id="@+id/imageFlipper"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:autoStart="true"-->
+<!--            android:flipInterval="3000"-->
+<!--            android:inAnimation="@android:anim/slide_in_left"-->
+<!--            android:outAnimation="@android:anim/slide_out_right"/>-->
+
+<!--        &lt;!&ndash; 🔹 Popular Dishes &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Popular Dishes"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingTop="16dp"-->
+<!--            android:padding="8dp"/>-->
+
+<!--        <ViewFlipper-->
+<!--            android:id="@+id/dishFlapper"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:autoStart="true"-->
+<!--            android:flipInterval="2500"-->
+<!--            android:inAnimation="@android:anim/slide_in_left"-->
+<!--            android:outAnimation="@android:anim/slide_out_right"/>-->
+
+<!--    </LinearLayout>-->
+<!--</ScrollView>-->
+
+
+<!--    &lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+<!--&lt;!&ndash;<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:background="@color/page_bg"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;    tools:context=".HomeFragment1">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;        xmlns:slider="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent">&ndash;&gt;-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Offers Right Now"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="28dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/orange"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingStart="16dp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ViewFlipper&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/imageFlipper"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:autoStart="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:flipInterval="3000"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inAnimation="@android:anim/slide_in_left"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:outAnimation="@android:anim/slide_out_right"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_margin="8dp"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Popular Right Now"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="28dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/orange"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingStart="16dp"/>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <ViewFlipper&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/dishFlapper"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="300sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:autoStart="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="50sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:flipInterval="3000"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inAnimation="@android:anim/slide_in_left"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:outAnimation="@android:anim/slide_out_right"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/rounded_image_bg"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:backgroundTint="#46484B"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_margin="8dp"/>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->

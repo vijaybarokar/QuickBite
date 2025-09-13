@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<VideoView
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:id="@+id/vvsplashvideologo"
+    android:layout_gravity="center"
+    android:src="@raw/burgeranimation"/>
+
+    <TextView
+        android:id="@+id/tvsplashTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vvsplashvideologo"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nosifer"
+        android:text="Quick Bite"
+        android:textAlignment="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+
+
+</LinearLayout>

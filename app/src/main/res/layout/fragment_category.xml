@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFragment"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+  <SearchView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/svcategoryfragmentsearchcategory"
+      android:queryHint="Search Category"
+      android:iconifiedByDefault="false"
+      android:layout_margin="16sp"
+      android:padding="8dp"
+      android:background="@drawable/etbgshape"
+
+      />
+
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/lvcategoryShowMultipleCategory"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvcategoryNoCategoryAvailable"
+        android:text="No Category Available"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/aldrich"
+        android:visibility="gone"/>
+
+</LinearLayout>

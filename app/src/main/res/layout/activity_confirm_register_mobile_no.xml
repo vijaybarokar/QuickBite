@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmRegisterMobileNoActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/page_bg"   >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/app_logo_without_bg"
+        android:tint="@color/primaryColor"
+        android:layout_marginBottom="16sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="Mobile No"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:counterTextColor="@color/black"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmRegisterMobileNoMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="12sp"
+            android:fontFamily="@font/aldrich"
+            android:inputType="text"
+            android:paddingLeft="12sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConfirmRegisterMobileNoverify"
+        android:text="Verify"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="5sp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_quickbite"
+        android:fontFamily="@font/black_ops_one"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
