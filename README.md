@@ -27,7 +27,6 @@ The app is built using **Java (Android Studio)** for the frontend and connects t
 |:---:|:---:|:---:|:---:|
 | <img src="screenshots/login.png" width="200"/> | <img src="screenshots/home.png" width="200"/> | <img src="screenshots/details.png" width="200"/> | <img src="screenshots/cart.png" width="200"/> |
 
-*(Note: Add screenshots to a 'screenshots' folder in your repo)*
 
 ## 🛠️ Tech Stack
 
